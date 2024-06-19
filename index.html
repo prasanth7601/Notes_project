@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Notes</h1>
+
+    </div>
+
+    <div class="container">
+        <div class="note-container">
+            <h2>Title</h2>
+            <h5>Name</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quisquam placeat aspernatur ducimus dolorum! Ea, iste totam quibusdam, culpa nisi quia quo, perferendis voluptatibus repellendus corporis consectetur consequuntur amet aspernatur?</p>
+            <button onclick="deletenote(event)">Delete</button>
+
+        </div>
+    </div>
+    <div class="popup-overlay">
+
+    </div>
+    <div class="popup-box">
+        <h2>Add Notes</h2>
+        <form>
+            <input type="text" placeholder="Notes Title" id="note-title">
+            <input type="text" placeholder="Notes Content" id="note-content">
+            <textarea placeholder="short description" id="note-description"></textarea>
+            <button id="add-notes">Add</button>
+            <button id="add-cancel">Cancel</button>
+        </form>
+    </div>
+
+    
+
+    <button class="add-btn" id="add-popup">+</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
